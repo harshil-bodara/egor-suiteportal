@@ -18,11 +18,6 @@ app.use("/api", indexRouter);
 //  DB Connection
 db.connect();
 
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-  next(createError(404));
-});
-
 app.get('/', function (req, res, next) {
   res.send({ title: ' API' });
 });
