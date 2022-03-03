@@ -1,0 +1,13 @@
+{
+  "name": "suite-portal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
