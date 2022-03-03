@@ -22,6 +22,13 @@ app.get('/', function (req, res, next) {
   res.send({ title: ' API' });
 });
 
+// Static file serve config
+app.use(express.static(path.join(__dirname, "build")));
+console.log("__dirname__dirname__dirname__dirname__dirname__dirname__dirname__dirname",__dirname)
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
