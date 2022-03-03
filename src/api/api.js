@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-export const API_HOST = "http://localhost:5000/api";
+export const API_HOST = process.env.REACT_APP_URL
 
 export default Axios.create({
   baseURL: API_HOST,

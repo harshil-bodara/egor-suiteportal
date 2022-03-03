@@ -23,6 +23,10 @@ app.use(function (req, res, next) {
   next(createError(404));
 });
 
+app.get('/', function (req, res, next) {
+  res.send({ title: ' API' });
+});
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
